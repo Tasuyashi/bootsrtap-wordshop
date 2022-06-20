@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap');
+
+html,body{
+    margin: 0;/* retrait du margin prédéfinit pour éviter les différences derésultats sur les navigateurs */
+    padding: 0;
+    /* retrait du padding pour les mêmes raison */
+    font-family: 'kufam', cursive;
+    /* on définit la police kufam qu'on à importé comme la police de base de document */
+    text-shadow: 1px 1px 2px #000000a6;
+    /* Le texte étant blanc sur des couleur le text shadow permet de la faire mieux ressortir (x, y, dispersion couleur */
+
+}
+
+/*-------------------Header-------------*/
+header{
+    /* définit un background color au cas ou le degradé ne soit pas pris en compte par le navigateur */
+    background: rgb(34, 194, 195);
+    /* red green blue possibilité d'opacité avec rgba (r, g, b, apicity de 0 à 1 )*/
+    background: linear-gradient(0deg, rgba(34,194,195) 0% rgba(45, 253, 149, 0, 681) 100%);
+    /* deg fait aller de bas en haut, pourcentage à partir duquel commence le mélange ---- pourcentage auquel fini le mélange */
+    display: flex;
+    /*display offre plein de moyens d'agencer les bloc, il s'avére très utile également pour le responsive, voir aussi grid */
+    justify-content: space-between;
+    /* combiné avec display flex il aence les blocs enfants les disposant anx extrémités bloc */
+    height: 90px;
+}
+
+.gradient{
+    display: inline-block;
+    /* pour pouvoir mettre les bloc les uns aà la file des autres */
+    margin: 10px;
+    height: 70px;
+    width: 50px;
+    background: rgb(0, 0, 0,);
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.76) 0% rgba(65, 65, 65, 0.198) 20% rgba(255, 255, 255, 0) 60%);
+    /* dégradé derrière l'image donnat une impression d'ombre pour faire ressortir le logo 100% est le rayon total de la balise, on peut mettre circule à la place ellipse */
+}
+
+.gradient img{
+    height: 70px;
+
+}
+
+h1{
+  display: inline-block;
+  /* por pouvoir lr mettre à côte du logo */
+  font-size: 1.5rem;
+  color: aliceblue;
+  vertical-align: 1.1em;
+
+}
+
+nav{
+    display: inline-block;
+
+}
+
+nav ul{
+    /* retire le margin et padding par defaut de la liste*/
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: auto 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 90px ;
+}   
+
+/*-----------------------BANDEAU DEFIANT-----------------------*/
+
+.banner{
+    background-color: rgba(34, 193, 165, 1);
+    -wbkit-box-shadow: 0px 5px 10px 0px rgba(99, 170, 166, 1);
+     -moz-box-shadow: 0px 5px 10px 0px rgba(99, 170, 166, 1);
+     box-shadow: 0px 5px 10px 0px rgba(99, 170, 166, 1);
+
+}
+
+marquee{
+    padding: 10px;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px #000000a6;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 1.2rem;
+}
+
+/*------------------ARTICLES---------------------*/
+article{
+    width: 70%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    -wbkit-box-shadow: 0px 0px 10px 0px rgba(99, 170, 166, 1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(99, 170, 166, 1);
+    box-shadow: 0px 5px 10px 0px rgba(99, 170, 166, 1);
+
+}
+
+article:first-of-type{
+    /* cible la première balise de type article */
+    background: rgb(191, 129, 148);
+    background: linaer-gradient(0deg, rgba(191, 129, 149, 1) 0%);
+}
+
+article:nth-of-type(2){
+    /* cible la balise de type article */
+    background: rgb(97, 227, 194);
+    background: linear-gradient(0deg,rgba(94, 227, 194, 1)0%, rgba(70, 134, 195, 1) 100%);
+}
+
+article:last-of-type{
+    /*cible la balise de type article */
+    background: rgb(226, 132, 23);
+    background: linear-gradient(0deg, rgba(226, 132, 23, 1) 0%, rgba(92, 144, 181, 1) 75%);
+}
+
+section{
+    width: 50%;
+    text-align: center;
+    margin: 2em;
+}
+
+article .text{
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+article:first-of-type .text{/* cible la section de texte du premier article */
+    text-align: left;/* aligne le texte à gauche*/
+}
+
+article:first-of-type .text{/* cible la section de texte du dernier article */
+    text-align: right;/* aligne le texte à droite */
+}
+
+section .img{
+    margin: auto;/* centre l'image en hauteur et sur les côte */
+
+}
+
+section img{
+    overflow: hidden;/* cache l'image qui dépasse des border radius*/
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px;/* mettre un border radius de la taille en pixel de 'image pour fair un rond */
+    width: 300px;
+    height: 300px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.5 1em;
+    height: 90px;
+    background: rgb(45, 253, 149);
+    background: linear-gradient(0deg, rgba(45, 253, 149, 0.681) 0%, rgba(34, 193, 1) 100% );
+    -webkit-box-shadow: 0px -5px 10px 0px rgba(99, 170, 166, 1);
+    -moz-box-shadow: 0px -5px 10px 0px rgba(99, 170, 166, 1);
+    box-shadow: 0px -5px 10px 0px rgba(99, 170, 166, 1);
+
+}
+
+footer small{
+    margin: 0;
+    padding: 0.1em;
+    color:aliceblue;
+    line-height: 90px;
+}
+
+@media screen and (max-width: 880px){
+    nav ul li{
+        margin: auto 1em;/* espace les items */
+    }
+    article{
+        width: 90px;
+        flex-wrap:wrap;
+    }
+    footer small{
+        line-height: 150%;
+    }
+    footer{
+        height: auto;
+        justify-content: center;
+    }
+    .paiement i{
+        line-height: 150%;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+ nav{
+     margin: 1em;
+ }
+
+ nav ul{
+     display: flex;
+     flex-direction: column;
+ }
+ nav ul li a{
+     line-height: 150%;
+ }
+
+}
+
+
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html><!--balise obligatoire ou début des documents en html-->
+<html lang="fr">
+    <!--indique aux navigateur et lecteur d'écran que le contenu de la page est en français-->
+<head>
+    <!-- balise qui contient les méta données sont sont contenu n'est pas affiché dans le corps de la page mais nsert au navigateurs et robots-->
+    <meta charset="UTF-8">
+    <!-- charset spécifie l'encodage des caractères, si on n'utilise pas les bon caratères spéciaux comme les accents et les ç ne s'afficherront pas correctement, si on n'en met pas la page mettre plus dde temps à se charger car le navigateur va essayer de le traduire lui-même  (occasionnat des erreus par la même occasion)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- défini la taille de la page masimale comme étant la taille de l'écran -->
+    
+     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Voyage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/voyage.css">
+</head>
+<body>
+    
+    <header>
+        <!-- l'entete du site-->
+        <div class="marque">
+            <!-- div permettant un display flex sur le header avec un justify content space between -->
+           <div class="gradient">
+               <!--div pour appliquer une ombre sous le logo en PNG-->
+            <img src="img/logo.png" alt="oiseau dégradé vert, logo de la compagnie de 'voyage'.... ">
+
+           </div>
+        
+
+        <h1>voyage</h1>
+        <!-- NOm de l'entreprise dans une balise de titre  de niveau 1-->
+    </div>
+    <nav>
+        <!--barre de navigatoin placée à droite du header-->
+        <ul>
+            <!--lien vers les exercices précédents placés dans une liste non ordonnée, certains s'ouvrent dans une nouvelle fenetre avec un target blank, tous ont un titre qui permet de savoir ou mène le lien et comment il s'ouvre-->
+        <li><a href="#" target="_blank" title="Voir truc bidule">
+            Reservations
+        </a></li>
+        <li><a href="#" title="Voir truc bidule">
+            Voyages
+        </a></li>
+        <li><a href="08_voyage.html" title="Vous étes ici">
+            Mon compte
+        </a></li>
+        </ul>
+    </nav>
+        
+    </header>
+
+    <main>
+        <!-- cette balise main aurait  pu s'ouvrir aprés le bandeau défilant, indique que c'est le contenu principal de page -->
+        <div class="banner"></div>
+         
+        <marquee behavior="" direction="">
+            Profitez de nos tout nouveaus tarif sur les départ vers l'Asie, de toutes nouvelles destination sont àportée. N'attendez pas que le soliel vienne à vous, allez à sa renconter.
+        </marquee>
+        <article>
+
+            <!-- la balise article sert à contenir un groupe d-information qui peuvent être sorties du contexte et garder son sens -->
+            <section class="img">
+                <!-- la class img à été donnée à plusieurs section afin d'appliquer la même style à chacune d'entres elles-->
+                <img src="img/japon.jpg" alt="Le mont fuji au Japon durant le printemps en plein couché de soleil">
+                <!-- Il  faut considérer les attribut alt (alternatives textuelles) comme obligatoires à partir du moment ou l'image n'est pas juste décorative -->
+
+            </section>
+
+            <section class="text">
+                <!-- la class text à été donnée à plusieurs sections d'appliquer le même style à chacune d'entre elles -->
+                <h2>Japon</h2><!--titre de niveau 2-->
+                <p>
+                    <!-- Des balise p pour formater du texte en paragrphes-->
+                    En japonais, « Japon » (日本) se dit Nihon ou Nippon, et éventuellement dans les documents
+                    administratifs Nipponkoku (日本国?) prononcé plus rarement Nihonkoku, soit « Nation japonaise ». La
+                    forme abrégée Ni- (日?), toujours en préfixe, sert parfois dans un but qualificatif : ainsi
+                    trouve-t-on Nicchū (日中?)14 pour l'adjectif « nippo-chinois » ou « sino-japonais »15. Le nom
+                    Japon est un exonyme, en effet c'est une prononciation chinoise transmise ensuite aux
+                    Occidentaux.
+                </p>
+                <p>
+                    Le nom 日本 veut dire « origine du soleil » ou « là où naît le soleil », ce que l'on traduit
+                    souvent par « Empire du soleil levant ». En effet, 日 signifie « soleil » (ou jour) et 本 signifie
+                    « origine » (ou racine). Le drapeau japonais (un disque rouge) évoque d'ailleurs le soleil.
+                </p>
+            </section>
+        </article>
+        <article>
+            <section class="text">
+                <h2>ThaÏlande</h2>
+                <p>La Thaïlande fait partie de la péninsule indochinoise, jusqu’à l’isthme de Kra, qui marque la
+                    transition avec la péninsule Malaise. Le pays s’étend sur environ 805 km d’est en ouest et 1 770
+                    km du nord au sud.</p>
+
+                <p>Au centre, on trouve une vaste plaine, la plaine alluviale de la Chao Phraya, le plus grand
+                    fleuve thaïlandais. C'est la région la plus dense au niveau de la population et la plus riche du
+                    point de vue agricole.</p>
+                    
+                <p>Le pays est classé 51e pays par ordre de superficie (514 000 km2) et 21e pays le plus peuplé du
+                    monde avec 68 299 099 habitants en janvier 2017, une superficie et une population très proches
+                    de celles de la France métropolitaine.</p>
+            </section>
+
+            <section>
+                <img src="img/thailande.jpg" alt="Des padoges au bord de l'eau turquoise thailande entourées de végétation ">
+            </section>
+        </article>
+
+        <article>
+            <section class="text">
+                <img src="img/inde.jpg" alt="Vue sur un temple, peut-être boudhiste, la lumière du soleil faisant ressortir sa couleur ocre">
+            </section>
+             <section>
+                 <h2>Inde</h2>
+                 <p>L'Inde est un foyer de civilisations parmi les plus anciennes du monde, la civilisation de la
+                    vallée de l'Indus s'y est développée dès 3000 av. J.-C. Le sous-continent indien a abrité de
+                    vastes empires et est présent sur les routes commerciales dès l'Antiquité.</p>
+
+                    <p>Le nom du pays « Inde » est dérivé de la version en vieux persan, « hindu », du mot sanskrit «
+                        Sindhu », l'appellation du fleuve Indus en sanskrit7.</p>
+
+                        <p>La constitution du pays utilise également le mot « Bharat » (mot hindi dérivé du nom sanskrit
+                            d'un roi aryen antique dont l'histoire peut être trouvée dans le Mahabharata)7.</p>
+             </section>
+        </article>
+    </main>
+
+    <footer>
+        <!-- Le footer est un pied-->
+        <small>&copy; Tous droits réservés à Voyages&trade; -Fakes travels since 1919</small>
+        <!--Copright de Tm (trangemark) qui signifie marque déposée-->
+        <div class="paiement">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amazone-pay"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-stripe"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<!-- alt + z pour retou à la ligne automatique -->
